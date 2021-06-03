@@ -1,0 +1,1 @@
+Fetch data from a MySQL database as an associative array

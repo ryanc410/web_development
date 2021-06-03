@@ -1,0 +1,1 @@
+This code implements a comparison algorithm that orders alphanumeric strings in the way a human being would, this is described as a "natural ordering"

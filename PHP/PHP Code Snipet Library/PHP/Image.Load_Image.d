@@ -1,0 +1,1 @@
+Loading Images of type GIF,JPEG,PNG and BMP

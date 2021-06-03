@@ -1,0 +1,1 @@
+Get all values from a result entry

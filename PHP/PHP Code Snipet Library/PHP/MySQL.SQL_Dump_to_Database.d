@@ -1,0 +1,1 @@
+If you wish to execute many queries stored in a .sql file (usually created with a MySQL Dump) - this simple script will open the file and execute each query.

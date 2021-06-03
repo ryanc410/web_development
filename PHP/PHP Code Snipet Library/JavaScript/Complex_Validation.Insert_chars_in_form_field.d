@@ -1,0 +1,1 @@
+Automatically insert a : character after 2 characters have been typed in a text field. Also remove a : if the user also types one.
