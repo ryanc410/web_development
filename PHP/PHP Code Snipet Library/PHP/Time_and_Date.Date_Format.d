@@ -1,0 +1,1 @@
+Format a local time/date according to locale settings

@@ -1,0 +1,1 @@
+Selecting data with mysql_fetch_array

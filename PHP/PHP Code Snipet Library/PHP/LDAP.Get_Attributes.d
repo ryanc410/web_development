@@ -1,0 +1,1 @@
+Show the list of attributes held for a particular directory entry

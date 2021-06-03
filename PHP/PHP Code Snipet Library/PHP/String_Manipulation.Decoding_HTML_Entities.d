@@ -1,0 +1,1 @@
+Convert all HTML entities to their applicable characters i.e. &quot; => "

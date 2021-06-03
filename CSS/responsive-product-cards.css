@@ -1,0 +1,99 @@
+<?php include ('include/header.php'); ?>
+<style>
+.container { display: grid;grid-template-rows: repeat(6, 1fr);grid-template-columns: repeat(3, 1fr);grid-gap: 10px;}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"], .navbar,.navbar a, .navbar-title {
+    width: 100%;
+    text-align: center;
+  }
+  
+}
+.card-wrapper { display: grid;grid-template-rows: repeat(6, 1fr);grid-template-columns: repeat(3, 1fr);grid-gap: 10px;}
+.card-title { font-family: 'Montserrat', sans-serif;font-size: 24px;font-weight: bolder;padding: 10px;color: #000000;}
+.card-divider { width: 90%; color: #000000;border: 3px solid #808080;}
+.card-details { color: #000000;font-family: 'Roboto', sans-serif;font-size: 17px;}
+.card-img:hover { opacity: 0.8;}
+.card-btn { margin-bottom: 15px;font-size: 16px;border: none;border-radius: 6px;background-color: #808080;color: #ffffff;padding: 8px 12px;cursor: pointer;transition: 0.6s;}
+.card-btn:hover { background-color: #0000CD;color: #FFFF00;}
+.card { width: 90%;margin-right: auto;margin-left: auto;background-color: #ffffff;border: 3px solid #808080;border-radius: 6px;text-align: center;}
+@media screen and (max-width: 575px;) {
+    .card-wrapper { display: block !important;}
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container { max-width: 599px;}
+    .card-wrapper { display: block !important;}
+    .card { margin-top: 50px;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container { max-width: 767px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container { max-width: 991px;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container { max-width: 1199px;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container { max-width: 100%;}
+}
+</style>
+<head>
+    <title>713TechSupport.com | HOME</title>
+</head>
+<body>
+<div class="card-wrapper">
+<div class="card">
+    <div class="card-title">Title 1</div>
+        <a href="img/2.jpg"><img class="card-img" src="img/250x300-1.png" alt="" /></a>
+<hr class="card-divider" />
+    <p class="card-details">This is a Detailed description of the picture above!</p>
+        <a href="#" alt=""><button class="card-btn" name="buy_product">Purchase with Paypal</button></a>
+</div>            
+<div class="card">
+    <div class="card-title">Title 1</div>
+        <a href="img/2.jpg"><img class="card-img" src="img/250x300-2.png" alt="" /></a>
+<hr class="card-divider" />
+    <p class="card-details">This is a Detailed description of the picture above!</p>
+        <button class="card-btn" name="buy_product">Purchase with Paypal</button>
+</div>
+<div class="card">
+    <div class="card-title">Title 1</div>
+        <a href="img/2.jpg"><img class="card-img" src="img/250x300-3.png" alt="" /></a>
+<hr class="card-divider" />
+    <p class="card-details">This is a Detailed description of the picture above!</p>
+        <button class="card-btn" name="buy_product">Purchase with Paypal</button>
+</div>
+    <div class="card">
+        <div class="card-title">Title 1</div>
+            <a href="img/2.jpg"><img class="card-img" src="img/250x300-1.png" alt="" /></a>
+    <hr class="card-divider" />
+        <p class="card-details">This is a Detailed description of the picture above!</p>
+            <a href="#" alt=""><button class="card-btn" name="buy_product">Purchase with Paypal</button></a>
+    </div>            
+    <div class="card">
+        <div class="card-title">Title 1</div>
+            <a href="img/2.jpg"><img class="card-img" src="img/250x300-2.png" alt="" /></a>
+    <hr class="card-divider" />
+        <p class="card-details">This is a Detailed description of the picture above!</p>
+            <button class="card-btn" name="buy_product">Purchase with Paypal</button>
+    </div>
+    <div class="card">
+        <div class="card-title">Title 1</div>
+            <a href="img/2.jpg"><img class="card-img" src="img/250x300-3.png" alt="" /></a>
+    <hr class="card-divider" />
+        <p class="card-details">This is a Detailed description of the picture above!</p>
+            <button class="card-btn" name="buy_product">Purchase with Paypal</button>
+    </div>
+    </div>
+</body>
+</html>

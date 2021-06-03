@@ -1,0 +1,1 @@
+Check for supported image creation functions

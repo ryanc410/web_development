@@ -1,0 +1,1 @@
+Strip whitespace from the beginning or end of a string

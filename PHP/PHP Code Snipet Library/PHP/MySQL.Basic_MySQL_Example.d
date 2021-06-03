@@ -1,0 +1,1 @@
+Connect, execute a query, print resulting rows and disconnect from a MySQL database
