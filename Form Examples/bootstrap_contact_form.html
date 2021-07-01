@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Form Example with Validation</title>
+
+    <!-- Bootstrap -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <form name="contactForm" action="" method="post">
+        <div class="container-fluid">
+            <div class="col">
+                <label for="contactName">Name:</label>
+                <input class="form-control" type="text" name="contactName" required />
+            </div>
+            <div class="col">
+                <label for="contactEmail">Email:</label>
+                <input class="form-control" type="email" name="contactEmail" required />
+            </div>
+            <div class="col">
+                <label for="contactMessage">Message:</label>
+                <textarea class="form-control" name="contactMessage" rows="3"></textarea>
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary" name="formSubmit">Send</button>
+            </div>
+        </div>
+    </form>
+    <script language="JavaScript" type="text/javascript" xml:space="preserve">
+  var frmvalidator  = new Validator("contactForm");
+
+ frmvalidator.EnableMsgsTogether();
+ frmvalidator.addValidation("contactName","req","Please enter your Name");
+  frmvalidator.addValidation("contactName","maxlen=20",	"Max length is 20 for the Name field");
+  frmvalidator.addValidation("contactName","alpha","A-Z or a-z only");
+  
+  frmvalidator.addValidation("contactEmail","maxlen=50");
+  frmvalidator.addValidation("contactEmail","req");
+  frmvalidator.addValidation("contactEmail","email");
+  
+  frmvalidator.addValidation("contactMessage","maxlen=250")
+  frmvalidator.addValidation("contactMessage","req","Cannot send a blank message")
+  </script>
+    <script src="https://iamryancook.com/js/form_validation.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
